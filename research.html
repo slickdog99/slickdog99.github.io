@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Raj Panchali</title>
+<meta name="description" content="Research and publications of Raj Panchali — mechanistic interpretability and technical AI safety.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="cv-btn" href="cv.pdf">
+      <span>CV</span>
+      <span aria-hidden="true">&rarr;</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="crumb">
+      <a href="index.html">&larr; Back to home</a>
+    </div>
+
+    <div class="page-head">
+      <div class="stroke" aria-hidden="true">
+        <svg viewBox="0 0 700 150" preserveAspectRatio="none" focusable="false">
+          <path d="M12,88 C35,72 82,85 145,68 C210,51 295,77 380,58 C465,40 550,70 625,55 C660,48 682,62 695,59 C698,64 690,72 670,78 C615,95 530,82 450,99 C370,115 280,92 200,108 C135,120 75,105 28,112 C8,115 2,105 12,88 Z" fill="#62A7EA" fill-opacity="0.45"/>
+          <path d="M30,78 C130,56 260,84 370,60 C470,38 580,68 672,46 L688,58 C580,86 460,56 350,80 C240,104 120,76 26,92 Z" fill="#F2EA1E" fill-opacity="0.95"/>
+          <path d="M70,74 C170,56 290,78 400,58 L428,64 C308,84 188,62 78,80 Z" fill="#FFFFFF" fill-opacity="0.85"/>
+          <circle cx="40" cy="58" r="3.2" fill="#F2EA1E"/>
+          <circle cx="300" cy="46" r="2.5" fill="#F2EA1E"/>
+          <circle cx="515" cy="40" r="3" fill="#62A7EA"/>
+          <circle cx="660" cy="34" r="3.5" fill="#F2EA1E"/>
+        </svg>
+      </div>
+      <span class="badge">01 / Research</span>
+      <h1>Research<span class="diamond" aria-hidden="true"></span></h1>
+    </div>
+
+    <section class="split">
+      <div class="prose">
+        <p>
+          I am a B.Tech Computer Engineering student at DJSCE, Mumbai, graduating in 2028, working
+          toward research in mechanistic interpretability and technical AI safety. What pulls me
+          toward it is plain curiosity: we build these models and still cannot read them. I want to
+          find out how far interpretability can actually go &mdash; how much of what a model is doing
+          inside can be made legible, named, and checked.
+        </p>
+        <p>
+          My current work audits a generate-and-screen pipeline in protein design. It asks whether a
+          published steering method acts through its intended target, whether a structure predictor's
+          confidence score measures what practitioners assume it measures, and whether an activation
+          probe that successfully predicts a model's own verdict tells you anything about physical
+          reality. Largely it does not &mdash; and the paper reports that rather than the result we
+          would have preferred to find.
+        </p>
+      </div>
+
+      <aside class="sidecard">
+        <h2><span>Affiliation</span><span class="chip" aria-hidden="true"></span></h2>
+        <div class="field">
+          <span class="k">Institution</span>
+          <p class="v">DJSCE, Mumbai</p>
+          <p class="sub">Dwarkadas J. Sanghvi College of Engineering</p>
+        </div>
+        <div class="field">
+          <span class="k">Degree</span>
+          <p class="v">B.Tech Computer Engineering</p>
+          <p class="sub">Graduating 2028</p>
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <div class="sec-head">
+        <h2>Publications</h2>
+        <span class="bar" aria-hidden="true"></span>
+      </div>
+
+      <article class="pub-card">
+        <div class="pub-meta">
+          <span class="pub-venue">NeurIPS 2026 Workshop on AI for Drug Discovery</span>
+          <span class="pub-doi">DOI: 10.64898/2026.11.10.765136</span>
+        </div>
+
+        <h3>
+          <a href="https://doi.org/10.64898/2026.11.10.765136" rel="noopener noreferrer" target="_blank">The Confessions of a Protein Language Model: Steering, Activations, and What Predicted Confidence Cannot Certify</a>
+        </h3>
+
+        <p class="authors">
+          Panini Shah<sup>*</sup>,
+          <span class="me"><span><strong>Ra<span class="dotj">j</span> Panchali</strong><sup>*</sup></span></span>,
+          Pearl Mody, Mahek Sanghvi, Meera Narvekar, Ruhina Karani
+        </p>
+
+        <p class="equal"><span aria-hidden="true">*</span><span>Equal contribution</span></p>
+
+        <p class="pub-links">
+          <a class="primary" href="https://doi.org/10.64898/2026.11.10.765136" rel="noopener noreferrer" target="_blank">bioRxiv <span aria-hidden="true">&#8599;</span></a>
+          <a href="https://www.biorxiv.org/content/10.64898/2026.11.10.765136v1.full.pdf" rel="noopener noreferrer" target="_blank">PDF <span aria-hidden="true">&darr;</span></a>
+          <a href="https://github.com/paninishah/plm-steering-audit" rel="noopener noreferrer" target="_blank">code <span aria-hidden="true">&#8599;</span></a>
+        </p>
+
+        <div class="pub-abstract">
+          <div class="k"><span>Summary</span><span class="bar" aria-hidden="true"></span></div>
+          <blockquote>
+            Protein generate-and-screen pipelines use an intervention to shape candidates and a cheap
+            readout to select them, but rarely test whether either tracks its intended target. We audit
+            three links. Steering preserves structural confidence only below a measured dose threshold
+            (&alpha;<sub>50</sub> = 1.240&times;); above saturation an arbitrary matched-norm direction
+            does equal damage, turning concept control into magnitude. The confidence score has an axis
+            of its own &mdash; pLDDT rises under truncation &mdash; so an intervention that shortens its
+            output can appear inert. Activations do predict the confidence gate early enough to abandon
+            a candidate mid-sequence and save roughly 27% of pipeline compute at 81% recall. That
+            usefulness stops there: on 433 length- and composition-matched design&ndash;scramble pairs
+            with measured protease stability, no balanced-accuracy interval excludes chance. Predicting
+            the gate does not establish foldability.
+          </blockquote>
+        </div>
+      </article>
+    </section>
+
+    <nav class="pagenav">
+      <a href="index.html">&larr; Back to home</a>
+    </nav>
+
+  </div>
+</main>
+
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+# Not part of the published site.
+
+# Working files
+content.md
+cv.html
+cv-preview.png
+previous-draft/
+.claude/
+
+# Superseded CV (kept locally as a backup of the pre-rebuild version)
+resumeee (4).pdf
+
+# The paper itself lives on bioRxiv; the site links there rather than
+# serving a 1 MB PDF of its own.
+The Confessions of a Protein Language Model_AI4DD_Camera-Ready.pdf
+
+# OS cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Preview screenshots, not part of the site
+site-preview/
